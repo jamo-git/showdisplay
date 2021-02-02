@@ -8,7 +8,8 @@ function createWindow() {
         height: 320,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        fullscreen: true
     })
 
     win.loadFile("index.html")

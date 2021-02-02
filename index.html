@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>A handy application</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'unsafe-inline' 'unsafe-eval' https://weatherwidget.io " />
+    <script src="backend.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="daylength" class="container">Getting data of day's length</div>
+
+    <!-- <div id="weather">Getting weather data</div> -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/60d8123d63/forssa/" data-label_1="FORSSA"
+        data-label_2="Kanta-Häme" data-font="Consolas" data-days="3" data-theme="weather_one">FORSSA Kanta-Häme</a>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
+
+    <div id="namedate" class="container">Getting data for who celebrates their name today</div>
+</body>
+
+</html>

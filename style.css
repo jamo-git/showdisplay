@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("images/nebula.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+.container {
+    font-family: Consolas, monaco, monospace;
+    font-size: 1.1em;
+    font-size: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: antiquewhite;
+    margin: 0.5rem;
+    padding: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(5px);
+  }
+
+  a {
+      pointer-events: none;
+      margin: 0.5em;
+      border-radius: 2%;
+  }

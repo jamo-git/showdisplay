@@ -23,6 +23,8 @@ app.on('window-all-closed', () => {
     }
 })
 
+app.commandLine.appendSwitch('enable-speech-dispatcher')
+
 app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
         createWindow()

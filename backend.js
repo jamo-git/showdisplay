@@ -17,7 +17,8 @@ daylengthreport.addEventListener("click", () => {
 })
 
 const utterance = new SpeechSynthesisUtterance()
-utterance.lang = "fi"
+
+utterance.lang = "en"
 // utterance.addEventListener('end', () => {
 //     txtIn.disabled = false
 // })
@@ -33,6 +34,10 @@ function playtext(text) {
     utterance.text = text
     speechSynthesis.speak(utterance)
 }
+
+playtext("Starting showdisplay. Fetching data")
+
+utterance.lang = "fi"
 
 async function getWebSiteData(site) {
     const response = await fetch(site)

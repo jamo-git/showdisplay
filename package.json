@@ -8,7 +8,7 @@
     "electron": "^11.2.1"
   },
   "name": "showdisplay",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A lovely display application for small displays",
   "main": "index.js",
   "dependencies": {

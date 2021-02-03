@@ -9,13 +9,13 @@ body {
 
 .container {
     font-family: Consolas, monaco, monospace;
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-size: normal;
     font-variant: small-caps;
     font-weight: bold;
     color: antiquewhite;
     margin: 0.5rem;
-    padding: 1.3rem;
+    padding: 0.7rem;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 

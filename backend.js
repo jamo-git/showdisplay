@@ -62,8 +62,8 @@ async function getDayLength() {
     const getWebData = await getWebSiteData("https://www.viastar.fi/Aurinko_nousee_laskee/Forssa/") // Option 1, correct timezone
     try {
         const $ = cheerio.load(getWebData)
-        const sunRise = $("body > table:nth-child(1) > tbody > tr > td:nth-child(1) > table > tbody > tr > td > b > font").text().match(/\d{1,2}:\d{1,2}/)
-        const sunDown = $("body > table:nth-child(1) > tbody > tr > td:nth-child(1) > table > tbody > tr > td > p > font:nth-child(1) > b").text().match(/\d{1,2}:\d{1,2}/)
+        const sunRise = $("body > table > tbody > tr:nth-child(4) > td > font > b").text().match(/\d{1,2}:\d{1,2}/)
+        const sunDown = $("body > table > tbody > tr:nth-child(5) > td > font > b").text().match(/\d{1,2}:\d{1,2}/)
         daylengthreport.innerHTML = `Aurinko nousee ${sunRise} ja laskee ${sunDown}`
     } catch (e) {
         daylengthreport.innerText = "Ei saa parsittua päivän pituutta"
